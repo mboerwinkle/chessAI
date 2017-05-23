@@ -1,0 +1,29 @@
+gameplay differences:
+-you win by capturing all kings. no check mechanics
+-no queening pawns mechanics
+-no castling mechanics
+-no en passant mechanics
+-no double initial pawn moves mechanics
+
+input::(map rotated so your pieces are on top)
+1 binary static true
+64 binary friend
+64 binary enemy
+64 binary king
+64 binary queen
+64 binary pawn
+64 binary rook
+64 binary knight
+64 binary bishop
+X numerical memory
+
+1 64 64 64 64 64 64 64 64
+512
+512
+512
+64 64
+
+output::
+64 numerical piece (highest valid chosen or random in case of tie)
+64 numerical destination (highest valid chosen or random in case of tie)
+X numerical memory
